@@ -3,7 +3,7 @@
 FetchContent_Declare(
   catch
   GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-  GIT_TAG v2.13.6)
+  GIT_TAG v3.5.4)
 FetchContent_MakeAvailable(catch)
 # Adds Catch2::Catch2
 
@@ -17,7 +17,7 @@ add_executable(test_module
 	${PROJECT_SOURCE_DIR}/app/src/module.cpp
 )
 
-target_link_libraries(test_module PRIVATE Catch2::Catch2)
+target_link_libraries(test_module PRIVATE Catch2WithMain)
 
 add_test(test_module test_module)
 target_include_directories(test_module PRIVATE include)
