@@ -2,6 +2,13 @@
 
 Example C++ project structure using CMake to be used as base for other projects.
 
+    $ git clone git@github.com:EsGeh/cmake-example-project.git
+    $ mv cmake-example-project <my-project-name>
+    $ cd <my-project-name>
+    $ rm -rf .git
+    $ git init
+    $ git remote add origin <remote_url>
+
 Project Structure
 
 - `./app/`: Executable Source code
